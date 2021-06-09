@@ -1,0 +1,11 @@
+@import "./base.scss";
+.App {
+  text-align: center;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+}
