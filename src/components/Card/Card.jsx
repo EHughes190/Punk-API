@@ -8,8 +8,8 @@ const Card = (props) => {
       <img className={styles.img} src={image_url} />
       <div className={styles.info}>
         <h3 className={styles.title}>{name}</h3>
-        {/* <p className={styles.tagline}>{tagline}</p> */}
-        <p className={styles.abv}>{tagline}</p>
+        <p className={styles.tagline}>{tagline}</p>
+        <p className={styles.abv}>{abv}%</p>
       </div>
     </div>
   );

@@ -2,16 +2,13 @@ import logo from "./logo.svg";
 import styles from "./App.module.scss";
 import Nav from "./components/Nav";
 import BeersContainer from "./container/BeersContainer";
+import Header from "./components/Header";
 import React, { useState, useEffect } from "react";
-//import beers from "./data/beers";
-
 function App() {
-  //const API_URL = `https://api.punkapi.com/v2/beers`;
-
   const [beer, setBeer] = useState([]);
 
   const getPunkAPI = async (searchTerm) => {
-    if (searchTerm === undefined) {
+    if (searchTerm === "") {
       const response = await fetch(
         "https://api.punkapi.com/v2/beers/?per_page=80"
       );
@@ -24,17 +21,16 @@ function App() {
       const beers = await response.json();
       setBeer(beers);
     }
-
-    console.log(beer);
   };
 
   useEffect(() => {
-    getPunkAPI();
+    getPunkAPI("");
   }, []);
 
   return (
     <>
       <div className={styles.App}>
+        <Header />
         <Nav handleSearch={getPunkAPI} />
         <BeersContainer beer={beer} />
       </div>

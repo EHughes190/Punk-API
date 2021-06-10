@@ -1,14 +1,14 @@
 @import "../../base.scss";
 
 .card {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 250px;
   border: 2px solid brown;
   border-radius: 5px;
 
   .img {
     padding: 5px;
-    height: 75%;
+    height: 70%;
     width: 100%;
     object-fit: contain;
     background: brown;
@@ -20,13 +20,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 25%;
+    height: 30%;
     .title {
       text-align: center;
     }
 
     .tagline {
       text-align: center;
+      font-size: 0.7em;
     }
   }
 }

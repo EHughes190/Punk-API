@@ -1,0 +1,14 @@
+@import "../../base.scss";
+
+.header {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 133, 146);
+  .title {
+    font-size: 5em;
+    color: whitesmoke;
+  }
+}
