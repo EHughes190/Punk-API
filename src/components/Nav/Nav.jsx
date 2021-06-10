@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./Nav.module.scss";
+import SearchBar from "../SearchBar";
 
-const Nav = () => {
+const Nav = (props) => {
+  const { handleSearch } = props;
   return (
     <>
-      <div className={styles.nav}>Nav works</div>
+      <div className={styles.nav}>
+        <SearchBar handleSearch={handleSearch} />
+      </div>
     </>
   );
 };

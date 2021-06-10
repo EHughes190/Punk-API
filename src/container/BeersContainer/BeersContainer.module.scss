@@ -1,0 +1,8 @@
+@import "../../base.scss";
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
