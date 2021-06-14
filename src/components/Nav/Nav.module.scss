@@ -3,8 +3,29 @@
 .nav {
   background-color: blue;
   height: 10vh;
-  padding-bottom: 10px;
+  width: 100vw;
+  padding: 20px;
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  border: 2px solid red;
+  .checkboxContainer {
+    display: flex;
+
+    .checkbox {
+      margin: 20px;
+      width: 10vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+  }
+
+  .searchContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -20,7 +20,7 @@ function App() {
       URL += "abv_gt=6&";
     }
     if (lowAbvChecked) {
-      URL += "abv_lt=4&";
+      URL += "abv_lt=6&";
     }
 
     fetch(URL)
@@ -54,7 +54,7 @@ function App() {
 
   useEffect(() => {
     getPunkAPI("");
-  }, [highAbvChecked, lowAbvChecked, beer]);
+  }, [highAbvChecked, lowAbvChecked]);
 
   return (
     <>

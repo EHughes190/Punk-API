@@ -14,8 +14,9 @@ const SearchBar = (props) => {
   return (
     <>
       <input
+        className={styles.search}
         type="text"
-        placeholder="search for beers"
+        placeholder="Search for your next big taste..."
         onChange={(e) => {
           handleSearch(e.target.value);
         }}
