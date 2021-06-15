@@ -1,14 +1,13 @@
 @import "../../base.scss";
 
 .nav {
-  background-color: blue;
+  background-color: white;
   height: 10vh;
-  width: 100vw;
-  padding: 20px;
+  max-width: 100%;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+
   .checkboxContainer {
     display: flex;
 
@@ -18,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white;
+      color: black;
     }
   }
 
