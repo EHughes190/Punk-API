@@ -1,3 +1,9 @@
+# Punk-API
+
+An app which uses the Punk IPA API to showcase a selection of beers. The user can search for beers, and filter based on ABV percentages.
+
+This project is in the process of completion, and needs styling, polish and the addition of a filter by acidity.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Punk-API
