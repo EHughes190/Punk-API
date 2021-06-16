@@ -7,8 +7,8 @@ const Nav = (props) => {
   return (
     <>
       <div className={styles.nav}>
-        <div className={styles.checkboxContainer}>
-          <div className={styles.checkbox}>
+        <div className={styles.checkbox}>
+          <div className={styles.checkbox__item}>
             <input
               type="checkbox"
               name="highAbv"
@@ -17,7 +17,7 @@ const Nav = (props) => {
             />
             <label htmlFor="highAbv">High ABV (abv &gt; 6.0%)</label>
           </div>
-          <div className={styles.checkbox}>
+          <div className={styles.checkbox__item}>
             <input
               type="checkbox"
               name="lowAbv"
@@ -28,7 +28,7 @@ const Nav = (props) => {
           </div>
         </div>
 
-        <div className={styles.searchContainer}>
+        <div className={styles.searchbar}>
           <SearchBar handleSearch={handleSearch} />
         </div>
       </div>

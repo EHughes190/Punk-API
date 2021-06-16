@@ -6,25 +6,24 @@
   max-width: 100%;
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.checkbox {
+  display: flex;
 
-  .checkboxContainer {
+  &__item {
+    margin: 20px;
+    width: 10vw;
     display: flex;
-
-    .checkbox {
-      margin: 20px;
-      width: 10vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: black;
-    }
-  }
-
-  .searchContainer {
-    height: 100%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    color: black;
   }
+}
+
+.searchbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

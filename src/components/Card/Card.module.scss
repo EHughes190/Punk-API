@@ -6,7 +6,7 @@
   border: 2px solid brown;
   border-radius: 5px;
 
-  .img {
+  &__img {
     padding: 5px;
     height: 70%;
     width: 100%;
@@ -14,20 +14,20 @@
     background: brown;
     text-align: center;
   }
+}
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 30%;
-    .title {
-      text-align: center;
-    }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  &__title {
+    text-align: center;
+  }
 
-    .tagline {
-      text-align: center;
-      font-size: 0.7em;
-    }
+  &__tagline {
+    text-align: center;
+    font-size: 0.7em;
   }
 }

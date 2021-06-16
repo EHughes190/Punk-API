@@ -5,11 +5,11 @@ const Card = (props) => {
   const { name, image_url, tagline, abv } = props.beer;
   return (
     <div className={styles.card}>
-      <img className={styles.img} src={image_url} />
+      <img className={styles.card__img} src={image_url} />
       <div className={styles.info}>
-        <h3 className={styles.title}>{name}</h3>
-        <p className={styles.tagline}>{tagline}</p>
-        <p className={styles.abv}>{abv}%</p>
+        <h3 className={styles.info__title}>{name}</h3>
+        <p className={styles.info__tagline}>{tagline}</p>
+        <p className={styles.info__abv}>{abv}%</p>
       </div>
     </div>
   );
