@@ -9,7 +9,7 @@ function App() {
   const [lowAbvChecked, setLowAbvChecked] = useState(false);
 
   const getPunkAPI = (searchTerm) => {
-    let URL = "https://api.punkapi.com/v2/beers/?per_page=80&";
+    let URL = "https://api.punkapi.com/v2/beers/?per_page=20&";
 
     if (searchTerm.length > 0) {
       URL += `beer_name=${searchTerm}`;

@@ -3,6 +3,7 @@
 
 .search {
   height: 5vh;
+  width: 70%;
   border: 2px solid gray;
   background: gray;
   color: white;
@@ -14,4 +15,16 @@
 .search:focus {
   outline: none;
   border-bottom: 4px solid #11adc2;
+}
+
+@media screen and (min-width: 768px) {
+  .search {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .search {
+    width: 100%;
+  }
 }

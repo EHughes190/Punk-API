@@ -3,18 +3,19 @@
 
 .nav {
   background-color: white;
-  height: 10vh;
+  height: 20vh;
   max-width: 100%;
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom: 4px solid #11adc2;
 }
 .checkbox {
   display: flex;
 
   &__item {
     margin: 20px;
-    width: 10vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,4 +28,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox {
+    justify-content: center;
+    &__item {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .searchbar {
+    width: 35%;
+  }
 }
