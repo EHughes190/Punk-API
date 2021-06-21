@@ -14,7 +14,7 @@
   display: flex;
 
   &__item {
-    margin: 20px;
+    margin: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
   .checkbox {
     justify-content: center;
     &__item {
-      width: 30%;
+      width: 15%;
     }
   }
 }
@@ -48,5 +48,12 @@
 
   .searchbar {
     width: 35%;
+  }
+
+  .checkbox {
+    justify-content: space-around;
+    &__item {
+      width: 25%;
+    }
   }
 }

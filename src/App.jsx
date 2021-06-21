@@ -2,17 +2,20 @@ import styles from "./App.module.scss";
 import Nav from "./components/Nav";
 import BeersContainer from "./container/BeersContainer";
 import Header from "./components/Header";
+import Modal from "./components/Modal/Modal";
 import React, { useState, useEffect } from "react";
 function App() {
   const [beer, setBeer] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [highAbvChecked, setHighAbvChecked] = useState(false);
   const [lowAbvChecked, setLowAbvChecked] = useState(false);
+  const [isClassics, setIsClassics] = useState(false);
 
-  const getPunkAPI = (searchTerm) => {
+  const getPunkAPI = () => {
     let URL = "https://api.punkapi.com/v2/beers/?per_page=20&";
 
     if (searchTerm.length > 0) {
-      URL += `beer_name=${searchTerm}`;
+      URL += `beer_name=${searchTerm}&`;
     }
 
     if (highAbvChecked) {
@@ -20,6 +23,10 @@ function App() {
     }
     if (lowAbvChecked) {
       URL += "abv_lt=6&";
+    }
+
+    if (isClassics) {
+      URL += "brewed_before=12-2008&";
     }
 
     fetch(URL)
@@ -35,6 +42,10 @@ function App() {
 
   const handleLowAbv = () => {
     return setLowAbvChecked(!lowAbvChecked);
+  };
+
+  const handleClassics = () => {
+    return setIsClassics(!isClassics);
   };
   //   if (searchTerm === "") {
   //     const response = await fetch(
@@ -53,18 +64,17 @@ function App() {
 
   useEffect(() => {
     getPunkAPI("");
-  }, [highAbvChecked, lowAbvChecked]);
+  }, [highAbvChecked, lowAbvChecked, isClassics, searchTerm]);
 
   return (
     <>
       <div className={styles.App}>
         <Header />
         <Nav
-          handleSearch={getPunkAPI}
+          handleSearch={setSearchTerm}
           handleHighAbv={handleHighAbv}
           handleLowAbv={handleLowAbv}
-          // highAbvChecked={highAbvChecked}
-          // highAbvFunction={setHighAbvChecked}
+          handleClassics={handleClassics}
         />
         <BeersContainer beers={beer} />
       </div>

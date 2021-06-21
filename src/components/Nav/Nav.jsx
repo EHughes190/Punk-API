@@ -3,7 +3,7 @@ import styles from "./Nav.module.scss";
 import SearchBar from "../SearchBar";
 
 const Nav = (props) => {
-  const { handleSearch, handleHighAbv, handleLowAbv } = props;
+  const { handleSearch, handleHighAbv, handleLowAbv, handleClassics } = props;
   return (
     <>
       <div className={styles.nav}>
@@ -25,6 +25,15 @@ const Nav = (props) => {
               onChange={handleLowAbv}
             />
             <label htmlFor="lowAbv">Low ABV (abv &lt; 6.0%)</label>
+          </div>
+          <div className={styles.checkbox__item}>
+            <input
+              type="checkbox"
+              name="classics"
+              id="classics"
+              onChange={handleClassics}
+            />
+            <label htmlFor="classics">Classics Range</label>
           </div>
         </div>
 
