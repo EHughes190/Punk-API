@@ -1,5 +1,54 @@
 @use "../../base.scss";
 
 .cardBack {
-  position: relative;
+  height: 400px;
+  width: 250px;
+  position: absolute;
+  background-color: #11adc2;
+  border: 2px solid black;
+  border-radius: 5px; 
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgba(252, 247, 247, 0.877);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.heading {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.facts {
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px
+}
+
+.factSpan {
+  font-weight: 400;
+  color: rgba(252, 247, 247, 0.877);
+}
+
+.desc {
+  margin: 10px;
+  height: 30%;
+  overflow-y: scroll;
+  font-weight: 500;
+}
+
+.food {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    text-decoration: underline;
+    color: #fff;
+  }
 }

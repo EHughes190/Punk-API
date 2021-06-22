@@ -2,7 +2,6 @@ import styles from "./App.module.scss";
 import Nav from "./components/Nav";
 import BeersContainer from "./container/BeersContainer";
 import Header from "./components/Header";
-import Modal from "./components/Modal/Modal";
 import React, { useState, useEffect } from "react";
 function App() {
   const [beer, setBeer] = useState([]);
