@@ -7,11 +7,6 @@ const CardFront = (props) => {
     image_url,
     tagline,
     abv,
-    description,
-    first_brewed,
-    ph,
-    ingredients,
-    food_pairing,
   } = props.beer;
   return (
     <>
