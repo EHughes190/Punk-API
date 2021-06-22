@@ -4,9 +4,6 @@ import styles from "./CardBack.module.scss";
 const CardBack = (props) => {
   const {
     name,
-    image_url,
-    tagline,
-    abv,
     description,
     first_brewed,
     ph,
