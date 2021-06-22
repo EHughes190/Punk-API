@@ -1,43 +1,6 @@
 // @import "../../base.scss";
 @use '../../base';
 
-// .card {
-//   height: 400px;
-//   width: 250px;
-//   border: 2px solid #11adc2;
-//   border-radius: 5px;
-//   margin-bottom: 20px;
-
-//   &:hover {
-//     cursor: pointer;
-//   }
-
-//   &__img {
-//     padding: 5px;
-//     height: 70%;
-//     width: 100%;
-//     object-fit: contain;
-//     background: #11adc2;
-//     text-align: center;
-//   }
-// }
-
-// .info {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   align-items: center;
-//   height: 30%;
-//   &__title {
-//     text-align: center;
-//   }
-
-//   &__tagline {
-//     text-align: center;
-//     font-size: 0.7em;
-//   }
-// }
-
 .beerCard {
   height: 100%;
   width: 100%;
