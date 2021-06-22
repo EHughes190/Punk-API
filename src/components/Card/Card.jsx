@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import styles from "./Card.module.scss";
 //import Modal from "../../components/Modal/Modal";
+import CardFront from "../CardFront";
+import CardBack from "../CardBack";
 
 const Card = (props) => {
-  const {
-    name,
-    image_url,
-    tagline,
-    abv,
-    description,
-    first_brewed,
-    ph,
-    ingredients,
-    food_pairing,
-  } = props.beer;
+  const beer = props.beer;
 
   // const [isOpen, setisOpen] = useState(false);
   // const setActive = () => {
@@ -25,17 +17,23 @@ const Card = (props) => {
   // ) : (
   //   ""
   // );
+  const [isFaceDown, setIsFaceDown] = useState(false);
+
+  const flipStyles = isFaceDown ? styles.faceDown : "";
 
   return (
     <>
-      <div className={styles.card}>
-        <img className={styles.card__img} src={image_url} />
-        <div className={styles.info}>
-          <h3 className={styles.info__title}>{name}</h3>
-          <p className={styles.info__tagline}>{tagline}</p>
-          <p className={styles.info__abv}>{abv}%</p>
+      <section
+        className={`${styles.beerCard} ${flipStyles}`}
+        onClick={() => setIsFaceDown(!isFaceDown)}
+      >
+        <div className={styles.front}>
+          <CardFront beer={beer} />
         </div>
-      </div>
+        <div className={styles.back}>
+          <CardBack beer={beer} />
+        </div>
+      </section>
     </>
   );
 };

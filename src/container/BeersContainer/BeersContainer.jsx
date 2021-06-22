@@ -4,7 +4,11 @@ import Card from "../../components/Card";
 
 const Beers = (props) => {
   const { beers } = props;
-  const beersJSX = beers.map((beer) => <Card beer={beer} />);
+  const beersJSX = beers.map((beer) => (
+    <div className={styles.card}>
+      <Card beer={beer} />
+    </div>
+  ));
 
   return (
     <>

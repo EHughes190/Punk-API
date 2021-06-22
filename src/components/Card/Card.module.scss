@@ -1,39 +1,66 @@
 // @import "../../base.scss";
 @use '../../base';
 
-.card {
-  height: 400px;
-  width: 250px;
-  border: 2px solid #11adc2;
-  border-radius: 5px;
-  margin-bottom: 20px;
+// .card {
+//   height: 400px;
+//   width: 250px;
+//   border: 2px solid #11adc2;
+//   border-radius: 5px;
+//   margin-bottom: 20px;
 
-  &:hover {
-    cursor: pointer;
-  }
+//   &:hover {
+//     cursor: pointer;
+//   }
 
-  &__img {
-    padding: 5px;
-    height: 70%;
-    width: 100%;
-    object-fit: contain;
-    background: #11adc2;
-    text-align: center;
+//   &__img {
+//     padding: 5px;
+//     height: 70%;
+//     width: 100%;
+//     object-fit: contain;
+//     background: #11adc2;
+//     text-align: center;
+//   }
+// }
+
+// .info {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   height: 30%;
+//   &__title {
+//     text-align: center;
+//   }
+
+//   &__tagline {
+//     text-align: center;
+//     font-size: 0.7em;
+//   }
+// }
+
+.beerCard {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  position: relative;
+  z-index: 0;
+
+  &.faceDown {
+    transform: rotateY(180deg);
   }
 }
+.beerCard.front {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+  border: solid 2px rgb(70, 50, 111);
+  backface-visibility: hidden;
+  background-color: white;
+  margin: 20px;
+}
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 30%;
-  &__title {
-    text-align: center;
-  }
-
-  &__tagline {
-    text-align: center;
-    font-size: 0.7em;
-  }
+.beerCard.back {
+  transform: rotateY(180deg);
 }
