@@ -6,7 +6,7 @@ const Beers = (props) => {
   const { beers } = props;
   const beersJSX = beers.map((beer) => (
     <div className={styles.card}>
-      <Card beer={beer} />
+      <Card beer={beer} key={toString(beer.id)} />
     </div>
   ));
 

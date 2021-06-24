@@ -10,16 +10,35 @@
   flex-direction: column;
   border-bottom: 4px solid #11adc2;
 }
+
 .checkbox {
   display: flex;
+  align-items: center;
+  &__text:hover {
+    background: #696868;
+    border: 2px solid #696868;
+  }
+  &__item input:checked + .checkbox__text {
+    background: #494949;
+    color: #11adc2;
+    border: 2px solid #11adc2;
+  }
 
-  &__item {
+  &__text {
     margin: 10px;
-    width: 100%;
+    height: 50px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -33,16 +52,16 @@
 @media screen and (min-width: 768px) {
   .checkbox {
     justify-content: center;
-    &__item {
-      width: 15%;
-    }
+    // &__item {
+    //   width: 15%;
+    // }
   }
 }
 
 @media screen and (min-width: 1230px) {
   .nav {
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     height: 10vh;
   }
 
@@ -52,8 +71,9 @@
 
   .checkbox {
     justify-content: space-around;
-    &__item {
-      width: 25%;
-    }
+    width: 50%;
+    // &__item {
+    //   width: 25%;
+    // }
   }
 }

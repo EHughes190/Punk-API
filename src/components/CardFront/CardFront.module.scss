@@ -9,13 +9,8 @@
   position: absolute;
   background: whitesmoke;
 
-  &:hover {
-    cursor: pointer;
-  }
-
   &__img {
-    padding: 5px;
-    height: 70%;
+    height: 60%;
     width: 100%;
     object-fit: contain;
     background: #11adc2;
@@ -28,14 +23,46 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 30%;
+  height: 40%;
+  padding: 10px;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
   &__title {
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
+    width: 90%;
   }
 
   &__tagline {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__abv {
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 30%;
+    padding: 5px;
+    font-weight: 700;
+  }
+
+  &__btn {
+    border: 2px solid black;
+    background: black;
+    color: #fff;
+    border-radius: 100px;
+    width: 50%;
+    padding: 7px;
+    font-weight: 500;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    color: #11adc2;
   }
 }

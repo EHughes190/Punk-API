@@ -10,17 +10,18 @@ const Card = (props) => {
 
   const flipStyles = isFaceDown ? styles.faceDown : "";
 
+  const flipCard = () => {
+    setIsFaceDown(!isFaceDown);
+  };
+
   return (
     <>
-      <section
-        className={`${styles.beerCard} ${flipStyles}`}
-        onClick={() => setIsFaceDown(!isFaceDown)}
-      >
+      <section className={`${styles.beerCard} ${flipStyles}`}>
         <div className={styles.front}>
-          <CardFront beer={beer} />
+          <CardFront beer={beer} key={beer.id + 0.1} flipCard={flipCard} />
         </div>
         <div className={styles.back}>
-          <CardBack beer={beer} />
+          <CardBack beer={beer} key={beer.id + 0.2} flipCard={flipCard} />
         </div>
       </section>
     </>

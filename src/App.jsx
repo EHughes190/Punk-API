@@ -11,7 +11,7 @@ function App() {
   const [isClassics, setIsClassics] = useState(false);
 
   const getPunkAPI = () => {
-    let URL = "https://api.punkapi.com/v2/beers/?per_page=20&";
+    let URL = "https://api.punkapi.com/v2/beers/?per_page=32&";
 
     if (searchTerm.length > 0) {
       URL += `beer_name=${searchTerm}&`;
@@ -62,7 +62,7 @@ function App() {
   // };
 
   useEffect(() => {
-    getPunkAPI("");
+    getPunkAPI();
   }, [highAbvChecked, lowAbvChecked, isClassics, searchTerm]);
 
   return (
