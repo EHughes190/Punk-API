@@ -9,7 +9,7 @@
 }
 
 .search {
-  height: 5vh;
+  height: 10vh;
   color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border: 2px solid white;
@@ -34,6 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .search {
+    height: 5vh;
     width: 40%;
     font-size: 1.2rem;
   }
