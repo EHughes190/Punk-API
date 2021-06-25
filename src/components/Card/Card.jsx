@@ -14,16 +14,24 @@ const Card = (props) => {
     setIsFaceDown(!isFaceDown);
   };
 
+  const cardJsx = isFaceDown ? (
+    <CardBack beer={beer} key={beer.id + 0.2} flipCard={flipCard} />
+  ) : (
+    <CardFront beer={beer} key={beer.id + 0.1} flipCard={flipCard} />
+  );
+
   return (
     <>
-      <section className={`${styles.beerCard} ${flipStyles}`}>
+      {/* <section className={`${styles.beerCard} ${flipStyles}`}>
         <div className={styles.front}>
           <CardFront beer={beer} key={beer.id + 0.1} flipCard={flipCard} />
         </div>
         <div className={styles.back}>
           <CardBack beer={beer} key={beer.id + 0.2} flipCard={flipCard} />
         </div>
-      </section>
+
+      </section> */}
+      {cardJsx}
     </>
   );
 };
