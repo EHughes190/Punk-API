@@ -2,11 +2,10 @@
 @use '../../base';
 
 .content {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .card {

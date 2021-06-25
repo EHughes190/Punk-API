@@ -3,7 +3,7 @@
 .cardFront {
   height: 400px;
   width: 250px;
-  border: 2px solid #11adc2;
+  border: 3px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
   position: absolute;
@@ -16,6 +16,10 @@
     background: #11adc2;
     text-align: center;
   }
+}
+
+.cardFront:hover {
+  box-shadow: 8px 8px 16px 8px #888888;
 }
 
 .info {
