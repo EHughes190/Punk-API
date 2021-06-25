@@ -13,23 +13,23 @@
   z-index: 0;
   margin-top: 30px;
 
-  &.faceDown {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-  }
+  // &.faceDown {
+  //   transform: rotateY(180deg);
+  //   -webkit-transform: rotateY(180deg);
+  // }
 }
-.beerCard.front {
-  margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  margin: 20px;
-}
+// .beerCard.front {
+//   margin-bottom: 10px;
+//   border-radius: 5px;
+//   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+//   backface-visibility: hidden;
+//   -webkit-backface-visibility: hidden;
+//   margin: 20px;
+// }
 
-.beerCard .back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
+// .beerCard .back {
+//   -webkit-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   -webkit-transform: rotateY(180deg);
+//   transform: rotateY(180deg);
+// }

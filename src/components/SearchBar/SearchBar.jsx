@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SearchBar.module.scss";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import magnifyingGlassLight from "@iconify-icons/ph/magnifying-glass-light";
 
 const SearchBar = (props) => {
