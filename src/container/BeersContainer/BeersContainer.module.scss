@@ -9,12 +9,18 @@
 }
 
 .card {
-  width: 250px;
+  width: 280px;
   height: 400px;
 }
 @media screen and (min-width: 768px) {
   .content {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
