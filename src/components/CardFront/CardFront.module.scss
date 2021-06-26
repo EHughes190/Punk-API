@@ -4,7 +4,7 @@
   height: 400px;
   width: 280px;
   border: 3px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 20px;
   position: absolute;
   background: whitesmoke;
@@ -15,6 +15,8 @@
     object-fit: contain;
     background: #11adc2;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
 

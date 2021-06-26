@@ -1,8 +1,9 @@
 # Punk-API
 
-An app which uses the Punk IPA API to showcase a selection of beers. The user can search for beers, and filter based on ABV percentages.
+An app which uses the Punk IPA API to showcase a selection of beers. The user can search for beers, and filter based on ABV percentages, or by the 'Classics' range.
 
-This project is in the process of completion, and needs styling, polish and the addition of a filter by acidity.
+My Design:
+https://www.figma.com/file/t4zcQJcN2w8R8gsDuHSzh4/BrewdogAPI?node-id=0%3A1
 
 # Getting Started with Create React App
 
