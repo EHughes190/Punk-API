@@ -6,7 +6,7 @@ An app which uses the Punk IPA API to showcase a selection of beers. The user ca
 
 - [Live site](https://punk-api-c310d.web.app/)
 
-- [High fidelity Wire frames](https://www.figma.com/file/t4zcQJcN2w8R8gsDuHSzh4/BrewdogAPI?node-id=0%3A1)
+- [My Design](https://www.figma.com/file/t4zcQJcN2w8R8gsDuHSzh4/BrewdogAPI?node-id=0%3A1)
 
 My Design:
 
