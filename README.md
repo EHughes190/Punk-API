@@ -8,8 +8,6 @@ An app which uses the Punk IPA API to showcase a selection of beers. The user ca
 
 - [My Design](https://www.figma.com/file/t4zcQJcN2w8R8gsDuHSzh4/BrewdogAPI?node-id=0%3A1)
 
-My Design:
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
