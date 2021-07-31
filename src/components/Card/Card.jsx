@@ -1,39 +1,24 @@
 import React, { useState } from "react";
-import styles from "./Card.module.scss";
 import CardFront from "../CardFront";
 import CardBack from "../CardBack";
 
 const Card = (props) => {
-  const beer = props.beer;
+  const { beer } = props;
 
   const [isFaceDown, setIsFaceDown] = useState(false);
-
-  const flipStyles = isFaceDown ? styles.faceDown : "";
 
   const flipCard = () => {
     setIsFaceDown(!isFaceDown);
   };
 
+  //WHICH SIDE OF THE CARD SHOULD BE SHOWN
   const cardJsx = isFaceDown ? (
-    <CardBack beer={beer} key={beer.id + 0.2} flipCard={flipCard} />
+    <CardBack beer={beer} flipCard={flipCard} />
   ) : (
-    <CardFront beer={beer} key={beer.id + 0.1} flipCard={flipCard} />
+    <CardFront beer={beer} flipCard={flipCard} />
   );
 
-  return (
-    <>
-      {/* <section className={`${styles.beerCard} ${flipStyles}`}>
-        <div className={styles.front}>
-          <CardFront beer={beer} key={beer.id + 0.1} flipCard={flipCard} />
-        </div>
-        <div className={styles.back}>
-          <CardBack beer={beer} key={beer.id + 0.2} flipCard={flipCard} />
-        </div>
-
-      </section> */}
-      {cardJsx}
-    </>
-  );
+  return <>{cardJsx}</>;
 };
 
 export default Card;

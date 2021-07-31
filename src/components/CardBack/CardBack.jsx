@@ -2,11 +2,15 @@ import React from "react";
 import styles from "./CardBack.module.scss";
 
 const CardBack = (props) => {
-  const { description, food_pairing } = props.beer;
-
+  const { description, food_pairing, id } = props.beer;
   const flipCard = props.flipCard;
-  const foodPairings = food_pairing.map((food) => {
-    return <li className={styles.food}>{food}</li>;
+
+  const foodPairings = food_pairing.map((food, index) => {
+    return (
+      <li className={styles.food} key={id + "back" + index}>
+        {food}
+      </li>
+    );
   });
   return (
     <>

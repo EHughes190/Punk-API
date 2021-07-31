@@ -5,8 +5,8 @@ import Card from "../../components/Card";
 const Beers = (props) => {
   const { beers } = props;
   const beersJSX = beers.map((beer) => (
-    <div className={styles.card}>
-      <Card beer={beer} key={beer.id} />
+    <div className={styles.card} key={beer.id}>
+      <Card beer={beer} />
     </div>
   ));
 

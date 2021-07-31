@@ -8,6 +8,7 @@ const SearchBar = (props) => {
 
   return (
     <div className={styles.searchContainer}>
+      {/* SEARCHBAR */}
       <input
         className={styles.search}
         type="text"

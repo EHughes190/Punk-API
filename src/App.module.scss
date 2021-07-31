@@ -1,4 +1,3 @@
-//@import "./base.scss";
 @use './base' as *;
 
 .App {
@@ -8,4 +7,3 @@
   box-sizing: border-box;
   font-family: $font-family;
 }
-

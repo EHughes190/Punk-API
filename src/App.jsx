@@ -4,12 +4,14 @@ import BeersContainer from "./container/BeersContainer";
 import Header from "./components/Header";
 import React, { useState, useEffect } from "react";
 function App() {
+  //STATE VARIABLES
   const [beer, setBeer] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [highAbvChecked, setHighAbvChecked] = useState(false);
   const [lowAbvChecked, setLowAbvChecked] = useState(false);
   const [isClassics, setIsClassics] = useState(false);
 
+  //API FETCH FUNCTION
   const getPunkAPI = () => {
     let URL = "https://api.punkapi.com/v2/beers/?per_page=32&";
 
@@ -35,6 +37,7 @@ function App() {
       });
   };
 
+  //FILTER FUNCTIONS
   const handleHighAbv = () => {
     return setHighAbvChecked(!highAbvChecked);
   };
@@ -46,20 +49,6 @@ function App() {
   const handleClassics = () => {
     return setIsClassics(!isClassics);
   };
-  //   if (searchTerm === "") {
-  //     const response = await fetch(
-  //       "https://api.punkapi.com/v2/beers/?per_page=80"
-  //     );
-  //     const beersObj = await response.json();
-  //     setBeer(beersObj);
-  //   } else {
-  //     const response =
-  //       await fetch(`https://api.punkapi.com/v2/beers?per_page=80&beer_name=${searchTerm}
-  //     `);
-  //     const beersObj = await response.json();
-  //     setBeer(beersObj);
-  //   }
-  // };
 
   useEffect(() => {
     getPunkAPI();
