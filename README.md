@@ -8,9 +8,13 @@ An app which uses the Punk IPA API to showcase a selection of beers. The user ca
 
 - [My Design](https://www.figma.com/file/t4zcQJcN2w8R8gsDuHSzh4/BrewdogAPI?node-id=0%3A1)
 
-## Available Scripts
+## Running the project
 
-In the project directory, you can run:
+Once cloned, run
+
+### 'npm install'
+
+to install required dependencies. Then, in the project directory, you can run:
 
 ### `npm start`
 
