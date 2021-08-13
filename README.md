@@ -12,7 +12,7 @@ An app which uses the Punk IPA API to showcase a selection of beers. The user ca
 
 Once cloned, run
 
-### 'npm install'
+### `npm install`
 
 to install required dependencies. Then, in the project directory, you can run:
 
